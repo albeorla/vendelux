@@ -1,0 +1,330 @@
+[
+  {
+    "id": "mock-1",
+    "name": "Taylor Swift | The Eras Tour",
+    "dates": {
+      "start": {
+        "localDate": "2024-11-14",
+        "localTime": "19:00:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Rogers Centre",
+          "city": { "name": "Toronto" },
+          "state": { "name": "ON" },
+          "address": { "line1": "1 Blue Jays Way" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 150,
+        "max": 899,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/taylor-swift",
+    "classifications": [
+      {
+        "segment": { "name": "Music" },
+        "genre": { "name": "Pop" }
+      }
+    ]
+  },
+  {
+    "id": "mock-2",
+    "name": "Hamilton",
+    "dates": {
+      "start": {
+        "localDate": "2024-11-30",
+        "localTime": "20:00:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Richard Rodgers Theatre",
+          "city": { "name": "New York" },
+          "state": { "name": "NY" },
+          "address": { "line1": "226 W 46th St" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 99,
+        "max": 350,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/hamilton",
+    "classifications": [
+      {
+        "segment": { "name": "Arts & Theater" },
+        "genre": { "name": "Theatre" }
+      }
+    ]
+  },
+  {
+    "id": "mock-3",
+    "name": "New York Knicks vs. Boston Celtics",
+    "dates": {
+      "start": {
+        "localDate": "2024-10-24",
+        "localTime": "19:30:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Madison Square Garden",
+          "city": { "name": "New York" },
+          "state": { "name": "NY" },
+          "address": { "line1": "4 Pennsylvania Plaza" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 80,
+        "max": 1200,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/knicks",
+    "classifications": [
+      {
+        "segment": { "name": "Sports" },
+        "genre": { "name": "Basketball" }
+      }
+    ]
+  },
+  {
+    "id": "mock-4",
+    "name": "The Lion King",
+    "dates": {
+      "start": {
+        "localDate": "2024-11-19",
+        "localTime": "19:00:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Minskoff Theatre",
+          "city": { "name": "New York" },
+          "state": { "name": "NY" },
+          "address": { "line1": "200 W 45th St" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 85,
+        "max": 250,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1503095396549-807759245b35?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/lion-king",
+    "classifications": [
+      {
+        "segment": { "name": "Arts & Theater" },
+        "genre": { "name": "Theatre" }
+      }
+    ]
+  },
+  {
+    "id": "mock-5",
+    "name": "Jerry Seinfeld",
+    "dates": {
+      "start": {
+        "localDate": "2024-12-14",
+        "localTime": "20:00:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Beacon Theatre",
+          "city": { "name": "New York" },
+          "state": { "name": "NY" },
+          "address": { "line1": "2124 Broadway" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 95,
+        "max": 400,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1585699324551-f6c309eedeca?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/seinfeld",
+    "classifications": [
+      {
+        "segment": { "name": "Comedy" },
+        "genre": { "name": "Standup" }
+      }
+    ]
+  },
+  {
+    "id": "mock-6",
+    "name": "Free Community Concert",
+    "dates": {
+      "start": {
+        "localDate": "2024-11-09",
+        "localTime": "14:00:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Central Park",
+          "city": { "name": "New York" },
+          "state": { "name": "NY" },
+          "address": { "line1": "Central Park" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 0,
+        "max": 0,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/free-concert",
+    "classifications": [
+      {
+        "segment": { "name": "Music" },
+        "genre": { "name": "Rock" }
+      }
+    ]
+  },
+  {
+    "id": "mock-7",
+    "name": "Disney on Ice",
+    "dates": {
+      "start": {
+        "localDate": "2024-11-24",
+        "localTime": "11:00:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Barclays Center",
+          "city": { "name": "Brooklyn" },
+          "state": { "name": "NY" },
+          "address": { "line1": "620 Atlantic Ave" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 30,
+        "max": 120,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/disney-ice",
+    "classifications": [
+      {
+        "segment": { "name": "Family" },
+        "genre": { "name": "Ice Show" }
+      }
+    ]
+  },
+  {
+    "id": "mock-8",
+    "name": "Brooklyn Nets vs. Miami Heat",
+    "dates": {
+      "start": {
+        "localDate": "2024-12-04",
+        "localTime": "19:30:00"
+      }
+    },
+    "_embedded": {
+      "venues": [
+        {
+          "name": "Barclays Center",
+          "city": { "name": "Brooklyn" },
+          "state": { "name": "NY" },
+          "address": { "line1": "620 Atlantic Ave" }
+        }
+      ]
+    },
+    "priceRanges": [
+      {
+        "min": 40,
+        "max": 500,
+        "currency": "USD"
+      }
+    ],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=640&h=427&fit=crop",
+        "width": 640,
+        "height": 427
+      }
+    ],
+    "url": "https://ticketmaster.com/nets",
+    "classifications": [
+      {
+        "segment": { "name": "Sports" },
+        "genre": { "name": "Basketball" }
+      }
+    ]
+  }
+]

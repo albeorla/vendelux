@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary - Deep Coral/Vermillion */
+  --color-primary: #E85D4C;
+  --color-primary-hover: #D94A39;
+  --color-primary-light: #FEF2F0;
+  
+  /* Secondary - Rich Teal */
+  --color-secondary: #1A535C;
+  --color-secondary-hover: #143F46;
+  --color-secondary-light: #E8F4F5;
+  
+  /* Accent - Warm Gold */
+  --color-accent: #F4B942;
+  --color-accent-hover: #E5A830;
+  --color-accent-light: #FEF9EC;
+  
+  /* Warm Neutrals */
+  --color-gray-50: #FAF9F7;
+  --color-gray-100: #F5F3F0;
+  --color-gray-200: #E8E5E1;
+  --color-gray-300: #D4D0CA;
+  --color-gray-400: #A8A29E;
+  --color-gray-500: #78716C;
+  --color-gray-600: #57534E;
+  --color-gray-700: #44403C;
+  --color-gray-800: #292524;
+  --color-gray-900: #1C1917;
+  
+  /* Semantic */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  
+  /* Background */
+  --background: var(--color-gray-50);
+  --foreground: var(--color-gray-900);
+  --card-background: #ffffff;
+  
+  /* Fonts */
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: ui-monospace, monospace;
+  
+  /* Extend Tailwind with our custom colors */
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-light: var(--color-primary-light);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-hover: var(--color-secondary-hover);
+  --color-secondary-light: var(--color-secondary-light);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-light: var(--color-accent-light);
+  --color-warm-gray-50: var(--color-gray-50);
+  --color-warm-gray-100: var(--color-gray-100);
+  --color-warm-gray-200: var(--color-gray-200);
+  --color-warm-gray-300: var(--color-gray-300);
+  --color-warm-gray-400: var(--color-gray-400);
+  --color-warm-gray-500: var(--color-gray-500);
+  --color-warm-gray-600: var(--color-gray-600);
+  --color-warm-gray-700: var(--color-gray-700);
+  --color-warm-gray-800: var(--color-gray-800);
+  --color-warm-gray-900: var(--color-gray-900);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Heading font utility */
+.font-heading {
+  font-family: var(--font-heading), system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Simple gradient background */
+.bg-gradient-mesh {
+  background: 
+    radial-gradient(at 40% 20%, rgba(232, 93, 76, 0.08) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(26, 83, 92, 0.08) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(244, 185, 66, 0.06) 0px, transparent 50%),
+    var(--background);
+}
+
+/* Card glass effect */
+.card-glass {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Animation for popover */
+@keyframes scale-in {
+  from { 
+    opacity: 0; 
+    transform: scale(0.95); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.2s ease-out forwards;
+}
+
+/* Loading spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-scale-in,
+  .animate-spin {
+    animation: none;
+  }
+}

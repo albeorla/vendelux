@@ -1,0 +1,73 @@
+[
+  {
+    "id": "category",
+    "type": "multi-select",
+    "label": "What type of events are you looking for?",
+    "description": "Select all that apply",
+    "required": true,
+    "options": [
+      { "value": "KZFzniwnSyZfZ7v7nJ", "label": "Music", "apiParam": "classificationId" },
+      { "value": "KZFzniwnSyZfZ7v7nE", "label": "Sports", "apiParam": "classificationId" },
+      { "value": "KZFzniwnSyZfZ7v7na", "label": "Arts & Theater", "apiParam": "classificationId" },
+      { "value": "KZFzniwnSyZfZ7v7nb", "label": "Comedy", "apiParam": "classificationId" },
+      { "value": "KZFzniwnSyZfZ7v7n1", "label": "Family", "apiParam": "classificationId" }
+    ],
+    "apiMapping": {
+      "param": "classificationId",
+      "transform": "join-comma"
+    }
+  },
+  {
+    "id": "location",
+    "type": "location",
+    "label": "Where do you want to go?",
+    "required": true,
+    "apiMapping": {
+      "param": "geoPoint",
+      "transform": "geo-hash"
+    }
+  },
+  {
+    "id": "radius",
+    "type": "select",
+    "label": "How far are you willing to travel?",
+    "required": true,
+    "options": [
+      { "value": "10", "label": "10 miles" },
+      { "value": "25", "label": "25 miles" },
+      { "value": "50", "label": "50 miles" },
+      { "value": "100", "label": "100 miles" }
+    ],
+    "apiMapping": {
+      "param": "radius",
+      "transform": "direct"
+    }
+  },
+  {
+    "id": "dateRange",
+    "type": "date-range",
+    "label": "When?",
+    "required": false,
+    "apiMapping": {
+      "param": "dates",
+      "transform": "date-format"
+    }
+  },
+  {
+    "id": "price",
+    "type": "select",
+    "label": "What is your budget?",
+    "required": false,
+    "options": [
+      { "value": "free", "label": "Free" },
+      { "value": "cheap", "label": "$" },
+      { "value": "moderate", "label": "$$" },
+      { "value": "expensive", "label": "$$$" },
+      { "value": "any", "label": "Any" }
+    ],
+    "apiMapping": {
+      "param": "price",
+      "transform": "direct"
+    }
+  }
+]
